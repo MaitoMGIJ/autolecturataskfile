@@ -1,0 +1,9 @@
+com\ayesa\autolecturataskfile\ControlParameters.class
+com\ayesa\autolecturataskfile\TaskFile.class
+com\ayesa\autolecturataskfile\dao\TaskFileDao.class
+com\ayesa\autolecturataskfile\dao\TaskFileDaoImpl.class
+com\ayesa\autolecturataskfile\db\ConnectionFactory.class
+com\ayesa\autolecturataskfile\InputInterface.class
+com\ayesa\autolecturataskfile\NewCycles.class
+com\ayesa\autolecturataskfile\SFTPSender.class
+com\ayesa\autolecturataskfile\dto\AIReadingInfoDTO.class
