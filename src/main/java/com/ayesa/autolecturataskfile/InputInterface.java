@@ -26,7 +26,7 @@ public class InputInterface {
             tf.onGenerateReportFile(nc);
 
         } catch (SQLException | IOException | ClassNotFoundException ex ) {
-            System.out.println("### HA OCURRIDO UN ERROR: " + ex.getMessage());
+            System.out.println("5### HA OCURRIDO UN ERROR: " + ex.getMessage() + ex.getStackTrace());
         }
     }
 
@@ -36,7 +36,7 @@ public class InputInterface {
             tf.onGenerateReportFile(null);
 
         } catch (SQLException | IOException | ClassNotFoundException ex) {
-            System.out.println("### HA OCURRIDO UN ERROR: " + ex.getMessage());
+            System.out.println("6### HA OCURRIDO UN ERROR: " + ex.getMessage() + ex.getStackTrace());
         }
     }
 

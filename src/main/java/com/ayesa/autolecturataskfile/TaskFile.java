@@ -74,7 +74,7 @@ public class TaskFile {
             System.out.println("-------------------------- Fin Interface Autolecturas -------------------------");
 
         } catch (Exception ex) {
-            System.out.println("### HA OCURRIDO UN ERROR: " + ex.getMessage());
+            System.out.println("1### HA OCURRIDO UN ERROR: " + ex.getMessage() + ex.getStackTrace());
         }
     }
 
@@ -139,7 +139,7 @@ public class TaskFile {
             }
             System.out.println("##########################################################################");
         } catch (Exception ex) {
-            System.out.println("### HA OCURRIDO UN ERROR: " + ex.getMessage());
+            System.out.println("2### HA OCURRIDO UN ERROR: " + ex.getMessage() + ex.getStackTrace());
         }
     }
 
@@ -196,7 +196,7 @@ public class TaskFile {
             System.out.println("### Finaliza escritura csv satisfactoriamente...");
 
         } catch (IOException ex) {
-            System.out.println("### HA OCURRIDO UN ERROR: " + ex.getMessage());
+            System.out.println("3### HA OCURRIDO UN ERROR: " + ex.getMessage() + ex.getStackTrace());
         }
     }
 
@@ -222,7 +222,7 @@ public class TaskFile {
             sftp.onUploadFile();
 
         } catch (IOException ex) {
-            System.out.println("### HA OCURRIDO UN ERROR: " + ex.getMessage());
+            System.out.println("4### HA OCURRIDO UN ERROR: " + ex.getMessage() + ex.getStackTrace());
         }
     }
 
