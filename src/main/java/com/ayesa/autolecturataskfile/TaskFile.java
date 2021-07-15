@@ -75,6 +75,7 @@ public class TaskFile {
 
         } catch (Exception ex) {
             System.out.println("1### HA OCURRIDO UN ERROR: " + ex.getMessage() + ex.getStackTrace());
+            ex.printStackTrace();
         }
     }
 
@@ -139,7 +140,8 @@ public class TaskFile {
             }
             System.out.println("##########################################################################");
         } catch (Exception ex) {
-            System.out.println("2### HA OCURRIDO UN ERROR: " + ex.getMessage() + ex.getStackTrace());
+            System.out.println("2### HA OCURRIDO UN ERROR: " + ex.getMessage());
+            ex.printStackTrace();
         }
     }
 
@@ -196,7 +198,8 @@ public class TaskFile {
             System.out.println("### Finaliza escritura csv satisfactoriamente...");
 
         } catch (IOException ex) {
-            System.out.println("3### HA OCURRIDO UN ERROR: " + ex.getMessage() + ex.getStackTrace());
+            System.out.println("3### HA OCURRIDO UN ERROR: " + ex.getMessage());
+            ex.printStackTrace();
         }
     }
 
@@ -222,7 +225,8 @@ public class TaskFile {
             sftp.onUploadFile();
 
         } catch (IOException ex) {
-            System.out.println("4### HA OCURRIDO UN ERROR: " + ex.getMessage() + ex.getStackTrace());
+            System.out.println("4### HA OCURRIDO UN ERROR: " + ex.getMessage());
+            ex.printStackTrace();
         }
     }
 
