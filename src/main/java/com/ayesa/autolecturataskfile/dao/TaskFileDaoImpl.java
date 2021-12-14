@@ -228,7 +228,7 @@ public class TaskFileDaoImpl implements TaskFileDao {
     public List<List<String>> processInterface(NewCycles nc, ControlParameters cp) throws Exception {
         List<List<String>> llt = new ArrayList<>();
         
-        String procedure = "BEGIN AULEC_FLOW1(?,?,?,?); END;";
+        String procedure = "BEGIN AULEC_FLOW1_V2(?,?,?,?); END;";
         
         try (CallableStatement callableStatement = conn.prepareCall(procedure)) {
             callableStatement.registerOutParameter(1, OracleTypes.CURSOR);
@@ -259,13 +259,15 @@ public class TaskFileDaoImpl implements TaskFileDao {
                     lst.add(rs.getString(15));
                     lst.add(rs.getString(16));
                     lst.add(rs.getString(17));
-
+                    
                     String supplayId = rs.getString(6);
                     List<AIReadingInfoDTO> lrjson = lookupReadings(nc, supplayId);
 
                     Gson gson = new Gson();
                     String readingsJson = gson.toJson(lrjson);
                     lst.add(readingsJson);
+                    
+                    lst.add(rs.getString(18));
 
                     llt.add(lst);
                     

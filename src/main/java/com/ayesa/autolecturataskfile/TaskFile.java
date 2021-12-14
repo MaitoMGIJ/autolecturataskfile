@@ -172,6 +172,7 @@ public class TaskFile {
                 csv.append("METER_BARCODE" + cp.getSeparator());
                 csv.append("SYSTEM_NOTES" + cp.getSeparator());
                 csv.append("READINGS_INFO" + cp.getSeparator());
+                csv.append("CUSTOMER_NOTIFICATION" + cp.getSeparator());
 
                 csv.append("\n");
 
